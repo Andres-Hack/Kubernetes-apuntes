@@ -1,0 +1,91 @@
+
+{
+    "años":{
+        "_model":"Año",
+        "uno":{
+            "_id":"",
+            "año":"2018"
+        }
+    },
+    "feriados":
+    {
+        "_model":"Feriado",
+        "Año Nuevo":
+            {   "año":"->años.año",
+                "fecha": "2018-01-01",
+                "name": "Año nuevo",
+                "tipo":"innamovible",
+                "dia": ""
+            },
+        "Estado Plurinacional":
+            {   "año":"->años.año",
+                "fecha": "2018-01-22",
+                "name": "Dia del Estado Plurinacional de Bolivia",
+                "tipo":"innamovible",
+                "dia":""
+            },
+        "Lunes Carnaval":
+            {   "año":"->años.año",
+                "fecha": "2018-02-12",
+                "name": "Lunes de Carnaval",
+                "tipo":"movible",
+                "dia":""
+            },
+        "Martes Carnaval":
+            {   "año":"->años.año",
+                "fecha": "2018-02-13",
+                "name": "Martes de Carnaval",
+                "tipo":"movible",
+                "dia":""
+            },
+        "Viernes Santo":
+            {   "año":"->años.año",
+                "fecha": "2018-03-30",
+                "name": "Viernes Santo",
+                "tipo":"movible",
+                "dia":""
+            },
+        "Trabajo":
+            {   "año":"->años.año",
+                "fecha": "2018-05-01",
+                "name": "Dia del trabajo",
+                "tipo":"innamovible",
+                "dia":""
+            },
+        "Corpus":
+            {   "año":"->años.año",
+                "fecha": "2018-06-21",
+                "name": "Corpus Christi", 
+                "tipo":"movible",
+                "dia":""
+            },
+        "Amazonico":
+            {   "año":"->años.año",
+                "fecha": "2018-06-21",
+                "name": "Aymara Amazonico",
+                "tipo":"innamovible",
+                "dia":""
+            },
+        "Independencia":
+            {   "año":"->años.año",
+                "fecha": "2018-08-06",
+                "name": "Dia de la Independencia de Bolivia",
+                "tipo":"innamovible",
+                "dia":""
+            },
+        "Difuntos":
+            {   "año":"->años.año",
+                "fecha": "2018-11-02",
+                "name": "Dia de Todos los Difuntos",
+                "tipo":"innamovible",
+                "dia":""
+            },
+        "Navidad":
+            {   "año":"->años.año",
+                "fecha": "2018-12-25",
+                "name": "Navidad",
+                "tipo":"innamovible",
+                "dia":""
+            } 
+    }  
+}
