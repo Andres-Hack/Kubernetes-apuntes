@@ -1,0 +1,7 @@
+kubectl expose pods/client-pod --type="NodePort" --port 3000 --name=my-service
+
+
+kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+kubectl describe services/kubernetes-bootcamp
+ROLLBACK
+kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=gcr.io/google-samples/kubernetes-bootcamp:v10

@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: hellok8s
+spec:
+  type: LoadBalancer
+  selector:
+    app: hellok8s
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
