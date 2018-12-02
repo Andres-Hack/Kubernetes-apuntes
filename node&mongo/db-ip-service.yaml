@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: db # ESTE ES EL NOMBRE DEL HOST
+spec:
+  type: ClusterIP
+  selector:
+    component: db
+  ports:
+  - port: 27017
+    targetPort: 27017
